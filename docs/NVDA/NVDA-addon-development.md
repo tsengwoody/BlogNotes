@@ -27,6 +27,13 @@
 *	> pip install markdown
 *	下載 [Scons](https://www.twvip.org/scons-3.0.0-setup.exe) 安裝。(用 pip 安裝無法在 CMD 下 scons 指令，可能我環境沒正確設定，故用 exe 安裝)
 *	下載 [Git](https://git-scm.com/download/win) 安裝
+*	下載 [AddonTemplate](https://github.com/nvdaaddons/AddonTemplate) 的專案目錄結構：
+	>git clone https://github.com/nvdaaddons/AddonTemplate
+
+	依專案修改 buildVars.py, readme 等內容
+
+	*	buildVars.py:修改 addon_info 字典的內容，未來用 scons 打包時會自動根據這個字典的內容產生 manifest.ini 檔
+	*	readme:markdown 格式，可寫 addon 說明的檔案，同樣在 scons 時會包到 .nvda-addon 檔內，此外上傳到 github 時也可在 repository 的頁面上看到此文件內容
 
 ## 開發流程
 
